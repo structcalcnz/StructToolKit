@@ -1,0 +1,111 @@
+
+<h3>Usage Instruction:</h3>
+<p>
+  This toolkit is based on <strong>NZS 3604, NZS 1170.2,</strong> and <strong>NZS 1170.5</strong> standards. It supports vertical and lateral load calculations as well as bracing design.
+</p>
+
+<p>Follow these steps to move through the design process. Some steps are optional.</p>
+<div class="workflow-vertical">
+  <div class="step">1. Project Info<br><small>(optional)</small></div>
+  <div class="arrow">↓</div>
+  <div class="step">2. Parts<br><small>(optional)</small></div>
+  <div class="arrow">↓</div>
+  <div class="step">3. Levels<br><small>(required)</small></div>
+  <div class="arrow">↓</div>
+  <div class="step">4. Lateral Loads<br><small>(optional)</small></div>
+  <div class="arrow">↓</div>
+  <div class="step">5. Bracing Design<br><small>(start here if loads entered directly)</small></div>
+</div>
+
+<style>
+    .workflow-vertical {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 1rem 0;
+        font-size: 0.9rem;
+    }
+    .workflow-vertical .step {
+        background: #f1f5f9;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        min-width: 200px;
+    }
+    .workflow-vertical .arrow {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #64748b;
+    }
+    .dark .workflow-vertical .step {
+        background: #1f2937;
+        color: #f9fafb;
+    }
+    img {
+        max-width: 100%;
+        margin: 0.5rem 0;
+        border-radius: 0.25rem;
+    }
+    .dark img {
+        background-color: #f9fafb; 
+        padding: 0.25rem; 
+    }
+    p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 0.75rem;
+        color: #1f2937;
+    }
+    .dark p {
+        color: #d1d5db;
+    }
+    h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    a {
+        color:#0369a1;
+        font-weight: 600;
+    }
+</style>
+
+<h3>Notes</h3>
+<div class="help-notes"></div>
+<p>
+  <strong>Product Data:</strong> Some typical product data are provided, but they may be based on estimated values.  
+  Users may create custom inputs for any specific values required.
+</p>
+
+<p>
+  <strong>Predefined Building Parts:</strong> Parts are based on NZS 3604 and will suit most residential and light-commercial cases.
+</p>
+<p>
+<strong>Building Dimensions:</strong> The definitions of <em>Dimension-NS</em> and <em>Dimension-EW</em> refer to the total length of the building in the North–South or East–West directions respectively.
+</p>
+<p>
+These are illustrated in the figure below:
+</p>
+<img src="/Dims_figure.svg" alt="Building dimension definitions (NS and EW)" />
+<p>
+<strong>Note:</strong> Wind from the NS direction acts on the EW walls, and wind from the EW direction acts on the NS walls.
+</p>
+<p>
+  <strong>Lateral Loads:</strong> Earthquake actions follow <em>NZS 1170.5</em>.  
+  Wind actions are based on <em>NZS 3604</em>, with the option of a simplified method from <em>NZS 1170.2</em>.  
+  Users may design bracing for either method or the maximum wind actions obtained.
+</p>
+
+<p>
+  <strong>Bracing Layout & Design:</strong> Bracing must comply with the provisions of <em>NZS 3604</em>.
+</p>
+<h3>Documentation:</h3>
+<p>
+Please read the <em>User Manual</em> and <em>Technical Specification</em> for detailed instructions.  
+<br>
+Visit our website for the documents, updates and other structural design tools:  
+<a href="https://sites.google.com/view/nzsc-team/home" target="_blank" rel="noopener noreferrer">NZSC Team Web Hub</a>.
+</p>
+</div>

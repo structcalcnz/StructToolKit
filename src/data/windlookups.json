@@ -1,0 +1,35 @@
+{
+  "nzs3604": {
+    "zones": {
+      "Low": 0.62,
+      "Medium": 0.82,
+      "High": 1.16,
+      "Very High": 1.50,
+      "Extra High": 1.82
+    },
+    "cperh": [
+      { "h": 1, "val": 0.24 },
+      { "h": 2, "val": 0.40 },
+      { "h": 3, "val": 0.70 },
+      { "h": 4, "val": 0.85 },
+      { "h": 5, "val": 1.20 }
+    ]
+  },
+  "nzs1170": {
+    "cpwl": [
+      { "max_alpha": 9.99, "conditions": [{ "max_db": 1, "val": -0.5 }, { "max_db": 2, "val": -0.3 }, { "max_db": 999, "val": -0.2 }] },
+      { "max_alpha": 15, "conditions": [{ "max_db": 999, "val": -0.3 }] },
+      { "max_alpha": 20, "conditions": [{ "max_db": 999, "val": -0.4 }] },
+      { "max_alpha": 24.99, "conditions": [{ "max_db": 0.1, "val": -0.75 }, { "max_db": 999, "val": -0.5 }] }
+    ],
+    "cpr": [
+      { "max_alpha": 9.99, "conditions": [{ "max_hd": 0.3, "val": -0.4 }, { "max_hd": 0.5, "val": -0.45 }, { "max_hd": 0.75, "val": -0.6 }, { "max_hd": 1.0, "val": -0.725 }, { "max_hd": 999, "val": -0.95 }] },
+      { "max_alpha": 10, "conditions": [{ "max_hd": 0.25, "val": -0.4 }, { "max_hd": 0.5, "val": -0.6 }, { "max_hd": 0.75, "val": -0.75 }, { "max_hd": 999, "val": -0.9 }] },
+      { "max_alpha": 15, "conditions": [{ "max_hd": 0.25, "val": -0.3 }, { "max_hd": 0.5, "val": -0.5 }, { "max_hd": 0.75, "val": -0.6 }, { "max_hd": 999, "val": -0.7 }] },
+      { "max_alpha": 20, "conditions": [{ "max_hd": 0.25, "val": -0.5 }, { "max_hd": 0.5, "val": -0.6 }, { "max_hd": 0.75, "val": -0.5 }, { "max_hd": 999, "val": -0.4 }] },
+      { "max_alpha": 25, "conditions": [{ "max_hd": 0.25, "val": -0.7}, { "max_hd": 0.5, "val": -0.8 }, { "max_hd": 0.75, "val": -0.8 }, { "max_hd": 999, "val": -0.8 }] },
+      { "max_alpha": 30, "conditions": [{ "max_hd": 0.25, "val": -1.1 }, { "max_hd": 0.5, "val": -1.0 }, { "max_hd": 0.75, "val": -0.95 }, { "max_hd": 999, "val": -0.9 }] },
+      { "max_alpha": 35, "conditions": [{ "max_hd": 0.25, "val": -1.3 }, { "max_hd": 0.5, "val": -1.1 }, { "max_hd": 0.75, "val": -1.08 }, { "max_hd": 999, "val": -1.05 }] }
+    ]
+  }
+}

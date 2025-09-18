@@ -1,0 +1,1306 @@
+{
+  "categories": [
+    {
+      "id": "roofing",
+      "name": "Roofing"
+    },
+    {
+      "id": "underlying",
+      "name": "Underlying"
+    },
+    {
+      "id": "roof_frame",
+      "name": "Roof Frame"
+    },
+    {
+      "id": "ceiling_joist",
+      "name": "Ceiling Joist"
+    },
+    {
+      "id": "ceiling_lining",
+      "name": "Ceiling & Lining"
+    },
+    {
+      "id": "flooring",
+      "name": "Flooring"
+    },
+    {
+      "id": "cladding",
+      "name": "Cladding"
+    },
+    {
+      "id": "joists",
+      "name": "Joists"
+    },
+    {
+      "id": "studs",
+      "name": "Studs"
+    },
+    {
+      "id": "ext_layer",
+      "name": "External Layer"
+    },
+    {
+      "id": "concrete_masonry",
+      "name": "Concrete & Masonry"
+    },
+    {
+      "id": "slab",
+      "name": "Slab"
+    },
+    {
+      "id": "others",
+      "name": "Others"
+    }
+  ],
+  "components": [
+    {
+      "id": "asphalt-roll-2.5",
+      "name": "Asphalt Roll Layer 2.5mm",
+      "categoryIds": [
+        "roofing",
+        "underlying"
+      ],
+      "calcType": "area",
+      "unitWeight": 21.2,
+      "defaultParams": {
+        "thickness": 0.0025
+      },
+      "spec": "An economical choice for low-slope and flat roofs, providing a waterproof barrier. Often used in multi-layer systems for enhanced durability and longevity.",
+      "note": ""
+    },
+    {
+      "id": "asphalt-shingle-6",
+      "name": "Asphalt Shingle 6mm",
+      "categoryIds": [
+        "roofing"
+      ],
+      "calcType": "area",
+      "unitWeight": 21.2,
+      "defaultParams": {
+        "thickness": 0.006
+      },
+      "spec": "A popular and versatile roofing material, known for its ease of installation and wide range of color and style choices. Offers good fire resistance and is suitable for a variety of pitched roof designs.",
+      "note": ""
+    },
+    {
+      "id": "batten-70x35",
+      "name": "Timber Batten 70x35mm",
+      "categoryIds": [
+        "underlying",
+        "ceiling_joist",
+        "ext_layer"
+      ],
+      "calcType": "solid",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "width": 0.07,
+        "depth": 0.035,
+        "spacing": 0.6
+      },
+      "spec": "Essential for creating a drainage plane and ventilation gap in roofing and cladding systems. Can also be used for ceiling joists and other framing applications. Complies with NZS 3604 for timber-framed buildings.",
+      "note": ""
+    },
+    {
+      "id": "brick-veneer-70",
+      "name": "Brick Veneer 70mm",
+      "categoryIds": [
+        "cladding"
+      ],
+      "calcType": "area",
+      "unitWeight": 19.0,
+      "defaultParams": {
+        "thickness": 0.07
+      },
+      "spec": "Offers a classic and durable exterior finish with excellent thermal mass, contributing to energy efficiency. Low maintenance and resistant to fire and pests. Supplied by leading brands like Midland Brick and Firth.",
+      "note": ""
+    },
+    {
+      "id": "brick-veneer-90",
+      "name": "Brick Veneer 90mm",
+      "categoryIds": [
+        "cladding"
+      ],
+      "calcType": "area",
+      "unitWeight": 19.0,
+      "defaultParams": {
+        "thickness": 0.09
+      },
+      "spec": "Provides a robust and traditional cladding solution with high thermal mass for improved temperature regulation. Offers superior durability, low maintenance, and a wide range of aesthetic options. Supplied by reputable manufacturers such as Midland Brick and Firth.",
+      "note": ""
+    },
+    {
+      "id": "cement-fiber-board-15",
+      "name": "Fiber Cement Board 15mm",
+      "categoryIds": [
+        "cladding"
+      ],
+      "calcType": "area",
+      "unitWeight": 17.2,
+      "defaultParams": {
+        "thickness": 0.015
+      },
+      "spec": "A versatile and durable cladding material resistant to rot, fire, and termites. Can be used in a variety of external applications and is available with fire and acoustic ratings, meeting New Zealand's stringent building standards.",
+      "note": ""
+    },
+    {
+      "id": "cement-fiber-board-frr-6",
+      "name": "Fiber Cement Board (FR) 6mm",
+      "categoryIds": [
+        "ceiling_lining"
+      ],
+      "calcType": "area",
+      "unitWeight": 15,
+      "defaultParams": {
+        "thickness": 0.009
+      },
+      "spec": "Specifically designed for fire-rated ceiling systems to meet compliance requirements. A durable and stable lining option, supplied by trusted brands like James Hardie.",
+      "note": ""
+    },
+    {
+      "id": "cement-fiber-board-frr-9",
+      "name": "Fiber Cement Board (FR) 9mm",
+      "categoryIds": [
+        "ceiling_lining"
+      ],
+      "calcType": "area",
+      "unitWeight": 15,
+      "defaultParams": {
+        "thickness": 0.009
+      },
+      "spec": "Provides enhanced fire resistance for ceiling linings, crucial for meeting building code regulations in commercial and residential construction. A reliable solution from leading suppliers like James Hardie.",
+      "note": ""
+    },
+    {
+      "id": "ceramic-tile-on-pb",
+      "name": "Ceramic Tile on PB Flooring",
+      "categoryIds": [
+        "flooring"
+      ],
+      "calcType": "area",
+      "unitWeight": 25.5,
+      "defaultParams": {
+        "thickness": 0.01
+      },
+      "spec": "A premium flooring finish that is both durable and water-resistant, making it ideal for wet areas like bathrooms and kitchens. Offers a high-end aesthetic and is easy to clean and maintain.",
+      "note": ""
+    },
+    {
+      "id": "concrete-block-140",
+      "name": "Concrete Block 140mm",
+      "categoryIds": [
+        "concrete_masonry"
+      ],
+      "calcType": "area",
+      "unitWeight": 24.0,
+      "defaultParams": {
+        "thickness": 0.14
+      },
+      "spec": "A strong, load-bearing construction material suitable for both commercial and residential boundary walls. Offers excellent durability, fire resistance, and sound insulation properties.",
+      "note": "Weight for solid filled"
+    },
+    {
+      "id": "concrete-block-190",
+      "name": "Concrete Block 190mm",
+      "categoryIds": [
+        "concrete_masonry"
+      ],
+      "calcType": "area",
+      "unitWeight": 24.0,
+      "defaultParams": {
+        "thickness": 0.19
+      },
+      "spec": "A robust and versatile load-bearing element for commercial and residential construction, particularly for boundary walls. Provides superior strength, durability, and acoustic performance.",
+      "note": "Weight for solid filled"
+    },
+    {
+      "id": "concrete-block-240",
+      "name": "Concrete Block 240mm",
+      "categoryIds": [
+        "concrete_masonry"
+      ],
+      "calcType": "area",
+      "unitWeight": 24.0,
+      "defaultParams": {
+        "thickness": 0.24
+      },
+      "spec": "A heavy-duty load-bearing block for substantial commercial and residential wall construction. Offers maximum strength, durability, and excellent fire and sound resistance.",
+      "note": "Weight for solid filled"
+    },
+    {
+      "id": "concrete-tile-22",
+      "name": "Concrete Tile 22mm",
+      "categoryIds": [
+        "roofing"
+      ],
+      "calcType": "area",
+      "unitWeight": 24.0,
+      "defaultParams": {
+        "thickness": 0.022
+      },
+      "spec": "A long-lasting and fire-resistant roofing option for pitched roofs. Concrete tiles are known for their durability in harsh weather conditions and come in a variety of profiles and colors to suit different architectural styles.",
+      "note": ""
+    },
+    {
+      "id": "corrugated-aluminium-0.70",
+      "name": "Corrugated Aluminium 0.70mm",
+      "categoryIds": [
+        "roofing"
+      ],
+      "calcType": "area",
+      "unitWeight": 26.7,
+      "defaultParams": {
+        "thickness": 0.0007
+      },
+      "spec": "A lightweight and corrosion-resistant roofing material, making it an excellent choice for coastal and marine environments. Its durability ensures a long service life with minimal maintenance.",
+      "note": ""
+    },
+    {
+      "id": "corrugated-aluminium-0.90",
+      "name": "Corrugated Aluminium 0.90mm",
+      "categoryIds": [
+        "roofing"
+      ],
+      "calcType": "area",
+      "unitWeight": 26.7,
+      "defaultParams": {
+        "thickness": 0.0009
+      },
+      "spec": "A heavier gauge corrugated aluminium for increased strength and durability, particularly suitable for roofing in demanding coastal and marine locations. Offers excellent corrosion resistance and a long lifespan.",
+      "note": ""
+    },
+    {
+      "id": "corrugated-steel-0.40",
+      "name": "Corrugated Steel 0.40mm",
+      "categoryIds": [
+        "roofing"
+      ],
+      "calcType": "area",
+      "unitWeight": 80.0,
+      "defaultParams": {
+        "thickness": 0.0004
+      },
+      "spec": "Long-run steel profiles offering high corrosion resistance, suitable for all New Zealand climates. A durable and low-maintenance roofing solution from trusted suppliers like Colorsteel, Metalcraft, and Gerard.",
+      "note": ""
+    },
+    {
+      "id": "corrugated-steel-0.55",
+      "name": "Corrugated Steel / Colorsteel 0.55mm",
+      "categoryIds": [
+        "roofing"
+      ],
+      "calcType": "area",
+      "unitWeight": 80.0,
+      "defaultParams": {
+        "thickness": 0.00055
+      },
+      "spec": "Thicker gauge long-run steel profiles for enhanced durability and performance in all New Zealand climates. Offers excellent corrosion resistance and a wide range of color options from leading brands like Colorsteel, Metalcraft, and Gerard.",
+      "note": ""
+    },
+    {
+      "id": "corrugated-steel-1.00",
+      "name": "Corrugated Steel 1.00mm",
+      "categoryIds": [
+        "roofing"
+      ],
+      "calcType": "area",
+      "unitWeight": 80.0,
+      "defaultParams": {
+        "thickness": 0.0012
+      },
+      "spec": "Heavy-duty long-run steel profiles designed for maximum durability and corrosion resistance, suitable for the most demanding New Zealand environments. Supplied by leading manufacturers such as Colorsteel, Metalcraft, and Gerard.",
+      "note": ""
+    },
+    {
+      "id": "dhs-purlin-250-400",
+      "name": "DHS Purlin (Depth 250-400)",
+      "categoryIds": [
+        "roof_frame",
+        "joists"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.106,
+      "defaultParams": {
+        "spacing": 1.0
+      },
+      "spec": "Lightweight yet strong steel solutions for long-span roofing frameworks, allowing for efficient and economical roof or floor construction.",
+      "note": ""
+    },
+    {
+      "id": "dhs-purlin-depth-below-200",
+      "name": "DHS Purlin (Depth Below 200)",
+      "categoryIds": [
+        "roof_frame",
+        "joists"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.055,
+      "defaultParams": {
+        "spacing": 1.0
+      },
+      "spec": "Cost-effective and lightweight steel purlins for smaller span roofing frameworks in residential and commercial buildings.",
+      "note": ""
+    },
+    {
+      "id": "epdm-rubber-1.7",
+      "name": "EPDM Rubber 1.7mm",
+      "categoryIds": [
+        "roofing",
+        "underlying"
+      ],
+      "calcType": "area",
+      "unitWeight": 12.0,
+      "defaultParams": {
+        "thickness": 0.0017
+      },
+      "spec": "A high-performance synthetic rubber membrane ideal for low-pitch and flat roofs. Offers exceptional resistance to UV radiation, extreme weather, and ozone, ensuring a long-lasting and watertight seal.",
+      "note": ""
+    },
+    {
+      "id": "fiber-cement-panel",
+      "name": "Fiber Cement Panel with Battens",
+      "categoryIds": [
+        "cladding"
+      ],
+      "calcType": "area",
+      "unitWeight": 18,
+      "defaultParams": {
+        "thickness": 0.012
+      },
+      "spec": "A modern and fire-resistant cladding system that provides a sleek, monolithic appearance. Low maintenance and highly durable, it's a popular choice for contemporary residential and commercial buildings. Supplied by James Hardie and other leading manufacturers.",
+      "note": ""
+    },
+    {
+      "id": "fiber-cement-shingle-9",
+      "name": "Fiber Cement Shingle 9mm",
+      "categoryIds": [
+        "roofing"
+      ],
+      "calcType": "area",
+      "unitWeight": 17.2,
+      "defaultParams": {
+        "thickness": 0.009
+      },
+      "spec": "Offers the aesthetic of traditional shingles with the durability and low maintenance of fiber cement. Resistant to fire, rot, and pests, making it a long-lasting roofing solution from suppliers like James Hardie.",
+      "note": ""
+    },
+    {
+      "id": "gib-braceline-10",
+      "name": "GIB Braceline 10mm",
+      "categoryIds": [
+        "ceiling_lining"
+      ],
+      "calcType": "area",
+      "unitWeight": 9.0,
+      "defaultParams": {
+        "thickness": 0.01
+      },
+      "spec": "A key component of New Zealand's drywall systems, providing bracing elements for walls and ceilings. Part of the GIB range known for its fire, acoustic, and structural ratings.",
+      "note": ""
+    },
+    {
+      "id": "gib-braceline-13",
+      "name": "GIB Braceline 13mm",
+      "categoryIds": [
+        "ceiling_lining"
+      ],
+      "calcType": "area",
+      "unitWeight": 9.5,
+      "defaultParams": {
+        "thickness": 0.013
+      },
+      "spec": "A thicker and more robust plasterboard for enhanced bracing performance in walls and ceilings. GIB Braceline is a trusted solution in New Zealand for achieving required structural and fire safety standards.",
+      "note": ""
+    },
+    {
+      "id": "gib-fyreline-16",
+      "name": "GIB Fyreline 16mm",
+      "categoryIds": [
+        "ceiling_lining",
+        "ext_layer"
+      ],
+      "calcType": "area",
+      "unitWeight": 8.55,
+      "defaultParams": {
+        "thickness": 0.016
+      },
+      "spec": "A fire-resistant plasterboard from New Zealand's leading drywall manufacturer. Provides critical fire protection for walls and ceilings, along with acoustic and bracing capabilities, to meet building code requirements.",
+      "note": ""
+    },
+    {
+      "id": "gib-fyreline-19",
+      "name": "GIB Fyreline 19mm",
+      "categoryIds": [
+        "ceiling_lining",
+        "ext_layer"
+      ],
+      "calcType": "area",
+      "unitWeight": 8.7,
+      "defaultParams": {
+        "thickness": 0.019
+      },
+      "spec": "A high-performance, thick fire-resistant plasterboard for applications requiring superior fire ratings. Part of the GIB Fyreline range, it also offers excellent acoustic and bracing properties for comprehensive wall and ceiling solutions.",
+      "note": ""
+    },
+    {
+      "id": "gib-fyreline-2x16",
+      "name": "GIB Fyreline 2x16mm",
+      "categoryIds": [
+        "ceiling_lining"
+      ],
+      "calcType": "area",
+      "unitWeight": 8.55,
+      "defaultParams": {
+        "thickness": 0.032
+      },
+      "spec": "A double-layered system of GIB Fyreline for achieving high-level fire ratings in walls and ceilings. This system is a critical component in passive fire protection design in New Zealand buildings.",
+      "note": ""
+    },
+    {
+      "id": "hdf-board-18",
+      "name": "HDF Board 18mm",
+      "categoryIds": [
+        "flooring"
+      ],
+      "calcType": "area",
+      "unitWeight": 10.4,
+      "defaultParams": {
+        "thickness": 0.018
+      },
+      "spec": "A durable and dense fiberboard suitable as a substrate or a finished flooring surface for medium to heavy loads. Offers a stable and consistent base for various floor coverings.",
+      "note": ""
+    },
+    {
+      "id": "hyhoist-hj200x45",
+      "name": "HyHoist HJ200x45",
+      "categoryIds": [
+        "joists"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.033,
+      "defaultParams": {
+        "spacing": 1.0
+      },
+      "spec": "A lightweight and strong LVL (Laminated Veneer Lumber) I-joist, engineered for consistent performance in floor and roof framing. Its dimensional stability reduces issues like shrinking and warping.",
+      "note": ""
+    },
+    {
+      "id": "hyhoist-hj240x45",
+      "name": "HyHoist HJ240x45",
+      "categoryIds": [
+        "joists"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.035,
+      "defaultParams": {
+        "spacing": 1.0
+      },
+      "spec": "An engineered LVL I-joist providing a cost-effective and lightweight solution for residential and commercial construction. Offers greater design flexibility and is easy to install.",
+      "note": ""
+    },
+    {
+      "id": "hyhoist-hj240x63",
+      "name": "HyHoist HJ240x63",
+      "categoryIds": [
+        "joists"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.045,
+      "defaultParams": {
+        "spacing": 1.0
+      },
+      "spec": "A strong and lightweight engineered LVL I-joist suitable for residential and commercial construction. Its composition of structural LVL flanges and a structural plywood web ensures durability and ease of installation.",
+      "note": ""
+    },
+    {
+      "id": "hyhoist-hj240x90",
+      "name": "HyHoist HJ240x90",
+      "categoryIds": [
+        "joists"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.064,
+      "defaultParams": {
+        "spacing": 1.0
+      },
+      "spec": "A high-strength LVL I-joist, engineered for applications requiring longer spans or heavier loads. Provides consistent, reliable performance in floor and roof systems.",
+      "note": ""
+    },
+    {
+      "id": "hyhoist-hj300x45",
+      "name": "HyHoist HJ300x45",
+      "categoryIds": [
+        "joists"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.039,
+      "defaultParams": {
+        "spacing": 1.0
+      },
+      "spec": "A deep and efficient LVL I-joist, ideal for long-span floor and roof applications. Its engineered design ensures straightness and uniformity, simplifying construction.",
+      "note": ""
+    },
+    {
+      "id": "hyhoist-hj300x63",
+      "name": "HyHoist HJ300x63",
+      "categoryIds": [
+        "joists"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.049,
+      "defaultParams": {
+        "spacing": 1.0
+      },
+      "spec": "A robust LVL I-joist with wider flanges for increased strength and stability in demanding floor and roof structures.",
+      "note": ""
+    },
+    {
+      "id": "hyhoist-hj300x90",
+      "name": "HyHoist HJ300x90",
+      "categoryIds": [
+        "joists"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.069,
+      "defaultParams": {
+        "spacing": 1.0
+      },
+      "spec": "A heavy-duty LVL I-joist designed for maximum strength in long-span or heavily loaded floor and roof systems.",
+      "note": ""
+    },
+    {
+      "id": "hyhoist-hj360x63",
+      "name": "HyHoist HJ360x63",
+      "categoryIds": [
+        "joists"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.052,
+      "defaultParams": {
+        "spacing": 1.0
+      },
+      "spec": "A deep and strong LVL I-joist, providing a lightweight and cost-effective solution for long-span residential and commercial construction.",
+      "note": ""
+    },
+    {
+      "id": "hyhoist-hj360x90",
+      "name": "HyHoist HJ360x90",
+      "categoryIds": [
+        "joists"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.073,
+      "defaultParams": {
+        "spacing": 1.0
+      },
+      "spec": "A high-capacity LVL I-joist engineered for the most demanding long-span applications in floor and roof construction. Offers superior strength and rigidity.",
+      "note": ""
+    },
+    {
+      "id": "light-gauge-battens-70x35x0.55",
+      "name": "Light Gauge Battens 70x35x0.55mm",
+      "categoryIds": [
+        "underlying",
+        "ceiling_joist",
+        "ext_layer"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.0075,
+      "defaultParams": {
+        "spacing": 0.8
+      },
+      "spec": "A lightweight and durable steel batten system for fixing cladding, roofing, ceiling, and other materials. Offers a straight and true fixing surface that is resistant to rot and pests.",
+      "note": ""
+    },
+    {
+      "id": "light-gauge-steel-50x0.55",
+      "name": "Light Gauge Steel 50x0.55mm",
+      "categoryIds": [
+        "studs"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.006,
+      "defaultParams": {
+        "spacing": 0.6
+      },
+      "spec": "A versatile and lightweight steel stud for use in light partition walls. Easy to handle and install, providing a straight and stable frame that is resistant to fire and pests.",
+      "note": ""
+    },
+    {
+      "id": "light-gauge-steel-90x0.55",
+      "name": "Light Gauge Steel 90x0.55mm",
+      "categoryIds": [
+        "studs"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.0074,
+      "defaultParams": {
+        "spacing": 0.6
+      },
+      "spec": "A durable and dimensionally stable alternative to timber framing, commonly used in commercial and modern residential buildings. Resistant to rot, pests, and fire, it provides a long-lasting and low-maintenance structural solution.",
+      "note": ""
+    },
+    {
+      "id": "light-gauge-steel-90x0.75",
+      "name": "Light Gauge Steel 90x0.75mm",
+      "categoryIds": [
+        "studs"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.0101,
+      "defaultParams": {
+        "spacing": 0.6
+      },
+      "spec": "A heavier gauge steel stud offering increased strength and rigidity for load-bearing walls and other structural applications. A preferred choice in commercial and modern residential construction for its durability and resistance to environmental factors.",
+      "note": ""
+    },
+    {
+      "id": "light-gauge-steel-90x1.0",
+      "name": "Light Gauge Steel 90x1.0mm",
+      "categoryIds": [
+        "studs"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.0135,
+      "defaultParams": {
+        "spacing": 0.6
+      },
+      "spec": "A high-strength light gauge steel stud for demanding structural applications in commercial and residential buildings. Provides excellent load-bearing capacity and dimensional stability as an alternative to traditional timber framing.",
+      "note": ""
+    },
+    {
+      "id": "metal-cladding-0.55",
+      "name": "Metal Cladding 0.55mm",
+      "categoryIds": [
+        "cladding"
+      ],
+      "calcType": "area",
+      "unitWeight": 80.0,
+      "defaultParams": {
+        "thickness": 0.00055
+      },
+      "spec": "Durable long-run steel profiles that provide a weather-tight and low-maintenance exterior. With high corrosion resistance, they are suitable for all NZ climates. Available from leading suppliers like Colorsteel, Metalcraft, and Gerard.",
+      "note": ""
+    },
+    {
+      "id": "matel-tile-shingle",
+      "name": "Matel Tile, Shingle",
+      "categoryIds": [
+        "roofing"
+      ],
+      "calcType": "area",
+      "unitWeight": 77.5,
+      "defaultParams": {
+        "thickness": 0.001
+      },
+      "spec": "Combines the durability and strength of steel with the classic aesthetic of traditional tiles. A lightweight and long-lasting roofing solution from trusted brands like Gerard, offering excellent weather resistance.",
+      "note": ""
+    },
+    {
+      "id": "membrane-4",
+      "name": "Membrane 4mm",
+      "categoryIds": [
+        "roofing",
+        "underlying"
+      ],
+      "calcType": "area",
+      "unitWeight": 13.0,
+      "defaultParams": {
+        "thickness": 0.004
+      },
+      "spec": "A robust and flexible waterproofing membrane ideal for low-pitch and flat roofs. Offers strong resistance to UV radiation and storms, ensuring a durable and watertight roofing system.",
+      "note": ""
+    },
+    {
+      "id": "nu-wall-cladding",
+      "name": "Nu-Wall Cladding",
+      "categoryIds": [
+        "cladding"
+      ],
+      "calcType": "area",
+      "unitWeight": 27,
+      "defaultParams": {
+        "thickness": 0.003
+      },
+      "spec": "A premium aluminium cladding system known for its exceptional durability and resistance to corrosion, making it ideal for New Zealand's coastal environments. Offers a contemporary aesthetic with a range of profiles and finishes.",
+      "note": ""
+    },
+    {
+      "id": "parallel-chord-truss",
+      "name": "Parallel Chord Truss",
+      "categoryIds": [
+        "roof_frame",
+        "joists"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.125,
+      "defaultParams": {
+        "spacing": 1.0
+      },
+      "spec": "Engineered steel or timber truss systems designed for long-span roof or floor frameworks. They allow for large open spaces and provide efficient and cost-effective structural solutions.",
+      "note": ""
+    },
+    {
+      "id": "particle-or-flake-board-18",
+      "name": "Particle or Flake Board 18mm",
+      "categoryIds": [
+        "flooring"
+      ],
+      "calcType": "area",
+      "unitWeight": 7.0,
+      "defaultParams": {
+        "thickness": 0.018
+      },
+      "spec": "A cost-effective and standard flooring substrate for residential construction. Provides a smooth and stable base for a variety of floor coverings.",
+      "note": ""
+    },
+    {
+      "id": "particle-flake-board-12",
+      "name": "Particle & Flake Board 12mm",
+      "categoryIds": [
+        "ceiling_lining"
+      ],
+      "calcType": "area",
+      "unitWeight": 7.0,
+      "defaultParams": {
+        "thickness": 0.012
+      },
+      "spec": "An economical lining option for ceilings in various types of buildings. Provides a smooth surface for finishing.",
+      "note": ""
+    },
+    {
+      "id": "plaster-board-10",
+      "name": "Plaster Board 10mm",
+      "categoryIds": [
+        "ceiling_lining"
+      ],
+      "calcType": "area",
+      "unitWeight": 9.0,
+      "defaultParams": {
+        "thickness": 0.01
+      },
+      "spec": "A standard and versatile plasterboard for general use in wall and ceiling linings. Provides a smooth, durable surface for painting and finishing.",
+      "note": ""
+    },
+    {
+      "id": "plaster-board-13",
+      "name": "Plaster Board 13mm",
+      "categoryIds": [
+        "ceiling_lining"
+      ],
+      "calcType": "area",
+      "unitWeight": 9.0,
+      "defaultParams": {
+        "thickness": 0.013
+      },
+      "spec": "A thicker plasterboard for enhanced durability, acoustic performance, and impact resistance in wall and ceiling applications.",
+      "note": ""
+    },
+    {
+      "id": "plaster-eifs",
+      "name": "Plaster EIFS",
+      "categoryIds": [
+        "cladding"
+      ],
+      "calcType": "area",
+      "unitWeight": 2.5,
+      "defaultParams": {
+        "thickness": 0.05
+      },
+      "spec": "Exterior Insulation and Finish System (EIFS) provides a modern, monolithic plaster look with the added benefit of continuous exterior insulation, improving the thermal performance of the building.",
+      "note": "Estimated weight"
+    },
+    {
+      "id": "plywood-13",
+      "name": "Plywood 13mm",
+      "categoryIds": [
+        "underlying",
+        "ceiling_lining",
+        "ext_layer",
+        "flooring"
+      ],
+      "calcType": "area",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "thickness": 0.013
+      },
+      "spec": "A versatile structural panel used for bracing, flooring, and ceiling linings, particularly in bespoke, high-end residential projects. Offers excellent strength and stability.",
+      "note": ""
+    },
+    {
+      "id": "plywood-16",
+      "name": "Plywood 16mm",
+      "categoryIds": [
+        "ceiling_lining",
+        "underlying",
+        "ext_layer",
+        "flooring"
+      ],
+      "calcType": "area",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "thickness": 0.016
+      },
+      "spec": "A thicker plywood for applications requiring greater strength and rigidity, such as flooring and structural bracing. Also used for feature ceilings in high-end architectural designs.",
+      "note": ""
+    },
+    {
+      "id": "plywood-19",
+      "name": "Plywood 19mm",
+      "categoryIds": [
+        "ceiling_lining",
+        "underlying",
+        "ext_layer",
+        "flooring"
+      ],
+      "calcType": "area",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "thickness": 0.019
+      },
+      "spec": "A heavy-duty plywood for demanding structural applications including flooring, bracing, and feature ceilings. Provides maximum strength and stiffness.",
+      "note": ""
+    },
+    {
+      "id": "precast-concrete-100",
+      "name": "Precast Panel 100mm",
+      "categoryIds": [
+        "concrete_masonry"
+      ],
+      "calcType": "area",
+      "unitWeight": 25.0,
+      "defaultParams": {
+        "thickness": 0.1
+      },
+      "spec": "A durable and efficient precast reinforced concrete wall panel. Manufactured off-site for rapid on-site construction, offering excellent fire resistance and thermal mass.",
+      "note": ""
+    },
+    {
+      "id": "precast-concrete-150",
+      "name": "Precast Panel 150mm",
+      "categoryIds": [
+        "concrete_masonry"
+      ],
+      "calcType": "area",
+      "unitWeight": 25.0,
+      "defaultParams": {
+        "thickness": 0.15
+      },
+      "spec": "A thicker and more robust precast reinforced concrete wall panel for enhanced structural performance and durability. Ideal for a wide range of commercial and residential applications.",
+      "note": ""
+    },
+    {
+      "id": "rc-slab-100",
+      "name": "RC Slab 100mm",
+      "categoryIds": [
+        "slab"
+      ],
+      "calcType": "area",
+      "unitWeight": 24.0,
+      "defaultParams": {
+        "thickness": 0.1
+      },
+      "spec": "A standard reinforced concrete slab for ground floors and suspended slabs. Provides a strong, durable, and fire-resistant base for buildings.",
+      "note": ""
+    },
+    {
+      "id": "rib-slab-300",
+      "name": "RibRaft / Waffle Slab 300mm",
+      "categoryIds": [
+        "slab"
+      ],
+      "calcType": "area",
+      "unitWeight": 15,
+      "defaultParams": {
+        "thickness": 0.3
+      },
+      "spec": "A foundation system consisting of a 100mm slab with 200mm deep by 100mm wide ribs at 1.1-1.2m spacing. Offers a thermally efficient and cost-effective solution for residential and light commercial buildings.",
+      "note": "Estimated weight for 280-300mm deep."
+    },
+    {
+      "id": "rigidrap-8",
+      "name": "RigidRAP 8mm",
+      "categoryIds": [
+        "ext_layer"
+      ],
+      "calcType": "area",
+      "unitWeight": 7.5,
+      "defaultParams": {
+        "thickness": 0.008
+      },
+      "spec": "A high-performance rigid air barrier for external cavity wall systems. Provides a weather-resistant and breathable layer, protecting the building frame from moisture and improving energy efficiency.",
+      "note": ""
+    },
+    {
+      "id": "stone-tile-on-pb-10",
+      "name": "Stone Tile on PB 10mm",
+      "categoryIds": [
+        "flooring"
+      ],
+      "calcType": "area",
+      "unitWeight": 32.5,
+      "defaultParams": {
+        "thickness": 0.01
+      },
+      "spec": "A luxurious and durable flooring option, offering a high-end finish and excellent water resistance. Ideal for creating a premium look in residential and commercial interiors.",
+      "note": "Estimated weight for tile and substrate"
+    },
+    {
+      "id": "stone-veneer-100",
+      "name": "Stone Veneer 100mm",
+      "categoryIds": [
+        "cladding"
+      ],
+      "calcType": "area",
+      "unitWeight": 27.0,
+      "defaultParams": {
+        "thickness": 0.1
+      },
+      "spec": "A premium cladding that provides the timeless appeal of natural stone. Offers excellent durability and thermal mass, with higher initial costs but long-term value and aesthetic appeal.",
+      "note": ""
+    },
+    {
+      "id": "thermoplastic-polyolefin",
+      "name": "Thermoplastic Polyolefin Membrane (TPO)",
+      "categoryIds": [
+        "roofing",
+        "underlying"
+      ],
+      "calcType": "area",
+      "unitWeight": 18,
+      "defaultParams": {
+        "thickness": 0.0015
+      },
+      "spec": "A heat-reflective and energy-efficient roofing membrane for low-pitch and flat roofs. TPO is known for its durability, resistance to UV and chemical exposure, and is typically supplied in light colors to reduce heat absorption.",
+      "note": "Estimated weight, ranged 0.8-1.8kg/m²"
+    },
+    {
+      "id": "timber-90x45",
+      "name": "Timber 90x45mm",
+      "categoryIds": [
+        "joists",
+        "studs"
+      ],
+      "calcType": "solid",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "width": 0.09,
+        "depth": 0.045,
+        "spacing": 0.6
+      },
+      "spec": "A standard and versatile timber size for framing and studs, compliant with NZS 3604 for timber-framed buildings. Widely used in residential and light commercial construction.",
+      "note": "Average timber weight - 800kg/m³"
+    },
+    {
+      "id": "timber-140x45",
+      "name": "Timber 140x45mm",
+      "categoryIds": [
+        "joists",
+        "studs",
+        "roof_frame"
+      ],
+      "calcType": "solid",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "width": 0.14,
+        "depth": 0.045,
+        "spacing": 0.6
+      },
+      "spec": "A common timber size for framing in accordance with NZS 3604, providing greater depth for increased insulation in walls. Also used for joists and roof framing.",
+      "note": "Average timber weight - 800kg/m³"
+    },
+    {
+      "id": "timber-190x45",
+      "name": "Timber 190x45mm",
+      "categoryIds": [
+        "joists",
+        "roof_frame"
+      ],
+      "calcType": "solid",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "width": 0.19,
+        "depth": 0.045,
+        "spacing": 0.6
+      },
+      "spec": "A larger timber dimension for joists and roof framing as per NZS 3604, allowing for longer spans and heavier loads.",
+      "note": "Average timber weight - 800kg/m³"
+    },
+    {
+      "id": "timber-240x45",
+      "name": "Timber 240x45mm",
+      "categoryIds": [
+        "joists",
+        "roof_frame"
+      ],
+      "calcType": "solid",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "width": 0.24,
+        "depth": 0.045,
+        "spacing": 0.6
+      },
+      "spec": "A deep timber section for long-span joists and roof framing, specified in accordance with NZS 3604 for structural integrity.",
+      "note": "Average timber weight - 800kg/m³"
+    },
+    {
+      "id": "timber-290x45",
+      "name": "Timber 290x45mm",
+      "categoryIds": [
+        "joists",
+        "roof_frame"
+      ],
+      "calcType": "solid",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "width": 0.29,
+        "depth": 0.045,
+        "spacing": 0.6
+      },
+      "spec": "A substantial timber size for heavy-duty joists and roof framing, meeting the requirements of NZS 3604 for demanding structural applications.",
+      "note": "Average timber weight - 800kg/m³"
+    },
+    {
+      "id": "timber-300x45",
+      "name": "Timber 300x45mm",
+      "categoryIds": [
+        "joists"
+      ],
+      "calcType": "solid",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "width": 0.3,
+        "depth": 0.045,
+        "spacing": 0.6
+      },
+      "spec": "A large-dimension timber for long-span joists in floor systems, designed and specified according to NZS 3604 for strength and performance.",
+      "note": "Average timber weight - 800kg/m³"
+    },
+    {
+      "id": "timber-360x45",
+      "name": "Timber 360x45mm",
+      "categoryIds": [
+        "joists"
+      ],
+      "calcType": "solid",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "width": 0.36,
+        "depth": 0.045,
+        "spacing": 0.6
+      },
+      "spec": "A very deep timber section for maximum span capability in floor joists, used in applications requiring significant structural support as per NZS 3604.",
+      "note": "Average timber weight - 800kg/m³"
+    },
+    {
+      "id": "timber-double-140x45",
+      "name": "Timber 2/140x45mm",
+      "categoryIds": [
+        "studs",
+        "joists"
+      ],
+      "calcType": "solid",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "width": 0.14,
+        "depth": 0.09,
+        "spacing": 0.6
+      },
+      "spec": "A built-up timber member providing increased strength for studs and joists in situations requiring higher load-bearing capacity, in line with NZS 3604 principles.",
+      "note": "Average timber weight - 800kg/m³"
+    },
+    {
+      "id": "timber-double-90x45",
+      "name": "Timber 2/90x45mm",
+      "categoryIds": [
+        "studs",
+        "joists"
+      ],
+      "calcType": "solid",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "width": 0.09,
+        "depth": 0.09,
+        "spacing": 0.6
+      },
+      "spec": "A doubled-up timber section for enhanced strength in studs and joists, used where additional structural support is needed as per NZS 3604.",
+      "note": "Average timber weight - 800kg/m³"
+    },
+    {
+      "id": "timber-nog-90x45",
+      "name": "Timber Nog 90x45mm",
+      "categoryIds": [
+        "joists",
+        "studs"
+      ],
+      "calcType": "solid",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "width": 0.09,
+        "depth": 0.045,
+        "spacing": 0.8
+      },
+      "spec": "Essential timber blocking or nogging used to provide lateral support to studs and joists within a timber frame, as required by NZS 3604 to ensure structural stability.",
+      "note": "Average timber weight - 800kg/m³"
+    },
+    {
+      "id": "timber-panel",
+      "name": "Timber Panel with Battens",
+      "categoryIds": [
+        "cladding"
+      ],
+      "calcType": "area",
+      "unitWeight": 12,
+      "defaultParams": {
+        "thickness": 0.01
+      },
+      "spec": "A premium hardwood timber panel cladding system that creates a durable and attractive building exterior. The battens provide a rainscreen cavity for moisture management.",
+      "note": "Average timber weight - 1200kg/m³"
+    },
+    {
+      "id": "timber-truss-190",
+      "name": "Timber Truss 190mm",
+      "categoryIds": [
+        "roof_frame"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.1368,
+      "defaultParams": {
+        "spacing": 1.0
+      },
+      "spec": "A prefabricated timber truss for efficient and reliable roof framing. Engineered for specific loads and spans, they are a common component in residential and commercial construction.",
+      "note": "Estimated weight for timber truss"
+    },
+    {
+      "id": "timber-truss-240",
+      "name": "Timber Truss 240mm",
+      "categoryIds": [
+        "roof_frame"
+      ],
+      "calcType": "number",
+      "unitWeight": 0.1728,
+      "defaultParams": {
+        "spacing": 1.0
+      },
+      "spec": "A deeper prefabricated timber truss for longer spans or heavier roof loads. Provides a cost-effective and structurally sound solution for a wide range of roof designs.",
+      "note": "Estimated weight for timber truss"
+    },
+    {
+      "id": "vinyl-cladding",
+      "name": "Vinyl Cladding",
+      "categoryIds": [
+        "cladding"
+      ],
+      "calcType": "area",
+      "unitWeight": 16.5,
+      "defaultParams": {
+        "thickness": 0.0012
+      },
+      "spec": "A low-maintenance and durable cladding option that is resistant to fading, scratching, and denting. Available in a variety of colors and profiles, it provides a long-lasting and attractive exterior finish.",
+      "note": "The cladding board / sheet formed to 20-30mm thick"
+    },
+    {
+      "id": "weather-board-fiber-cement",
+      "name": "Weather Board - Fiber Cement",
+      "categoryIds": [
+        "cladding"
+      ],
+      "calcType": "area",
+      "unitWeight": 16,
+      "defaultParams": {
+        "thickness": 0.018
+      },
+      "spec": "Offers the classic look of timber weatherboards with the benefits of fiber cement: durability, low maintenance, and resistance to fire and rot. A popular choice for a long-lasting and attractive exterior.",
+      "note": ""
+    },
+    {
+      "id": "weather-board-hdf",
+      "name": "Weather Board - HDF",
+      "categoryIds": [
+        "cladding"
+      ],
+      "calcType": "area",
+      "unitWeight": 10.4,
+      "defaultParams": {
+        "thickness": 0.018
+      },
+      "spec": "A sustainable cladding option made from high-density fiberboard. While offering a traditional weatherboard look, it may have lower durability compared to other materials.",
+      "note": ""
+    },
+    {
+      "id": "weather-board-timber",
+      "name": "Weather Board - Timber",
+      "categoryIds": [
+        "cladding"
+      ],
+      "calcType": "area",
+      "unitWeight": 8.0,
+      "defaultParams": {
+        "thickness": 0.018
+      },
+      "spec": "A classic and timeless cladding choice that provides a natural aesthetic. While beautiful, it requires regular maintenance to ensure its longevity and protect it from the elements.",
+      "note": ""
+    },
+    {
+      "id": "wood-shingle-12",
+      "name": "Wood Shingle 12mm",
+      "categoryIds": [
+        "roofing"
+      ],
+      "calcType": "area",
+      "unitWeight": 10.0,
+      "defaultParams": {
+        "thickness": 0.012
+      },
+      "spec": "A traditional roofing material that offers a natural and rustic look, often used for heritage or rural properties. Durability is moderate and depends on the type of wood and maintenance.",
+      "note": ""
+    }
+  ],
+    "predefinedParts": [
+    {"id":"33c1138d-75e8-402e-b184-a61503b75ff3",
+    "name":"Metal Roof",
+    "partType": "Roof",
+    "layers":[{"id":"a97224f1-cc7f-46e4-a54a-67ea02f53a17","libraryComponentId":"corrugated-steel-0.55","name":"Corrugated Steel / Colorsteel 0.55mm","params":{"thickness":0.00055},"weight":0.044000000000000004},
+    {"id":"cc83f5a5-6a4d-4095-8767-6a3bf309092c","libraryComponentId":"batten-70x35","name":"Timber Batten 70x35mm","params":{"width":0.07,"depth":0.035,"spacing":0.6},"weight":0.03266666666666667},
+    {"id":"2962d666-1381-4e6b-9683-1f94293ff065","libraryComponentId":"timber-190x45","name":"Timber 190x45mm","params":{"width":0.19,"depth":0.045,"spacing":0.6},"weight":0.114},
+    {"id":"7f58debc-4aab-49be-b5fd-932eca4b7ce0","libraryComponentId":"batten-70x35","name":"Timber Batten 70x35mm","params":{"width":0.07,"depth":0.035,"spacing":0.6},"weight":0.03266666666666667},
+    {"id":"4d923f33-5152-4458-ae41-8ea6a853bd3b","libraryComponentId":"plaster-board-10","name":"Plaster Board 10mm","params":{"thickness":0.01},"weight":0.09}],
+    "totalWeight":0.3243865365284927,
+    "roofSlope":15},
+
+    {"id":"6ff88cea-d17c-42aa-be76-bfcbcb5ac275",
+    "name":"Timber Floor",
+    "partType": "Floor",
+    "layers":[{"id":"c04aaa3d-61c7-497d-a863-4c47220a68ed","libraryComponentId":"particle-or-flake-board-18","name":"Particle or Flake Board 18mm","params":{"thickness":0.018},"weight":0.126},
+    {"id":"ea5b9431-3525-4186-959b-57482a3ee41e","libraryComponentId":"timber-190x45","name":"Timber 190x45mm","params":{"width":0.19,"depth":0.045,"spacing":0.6},"weight":0.114},
+    {"id":"ddbbd97d-4063-40f2-ae8b-206faeedfc24","libraryComponentId":"batten-70x35","name":"Timber Batten 70x35mm","params":{"width":0.07,"depth":0.035,"spacing":0.6},"weight":0.03266666666666667},
+    {"id":"cf5f82e9-7fca-44d2-b011-1cbd089ed37c","libraryComponentId":"plaster-board-10","name":"Plaster Board 10mm","params":{"thickness":0.01},"weight":0.09}],
+    "totalWeight":0.3626666666666667},
+
+    {"id":"44215000-9777-46e6-bcda-0f9a0ab5c656",
+    "name":"Weatherboard Wall",
+    "partType": "Wall",
+    "layers":[{"id":"694242aa-32bd-47e8-801d-d64f1083ce66","libraryComponentId":"weather-board-timber","name":"Weather Board (Timber)","params":{"thickness":0.018},"weight":0.144},
+    {"id":"c94c6248-ec9a-4744-9947-61d17206e0b1","libraryComponentId":"batten-70x35","name":"Timber Batten 70x35mm","params":{"width":0.07,"depth":0.035,"spacing":0.6},"weight":0.03266666666666667},
+    {"id":"ad0b9aac-929d-4e52-9f81-47e3f29b74a4","libraryComponentId":"timber-90x45","name":"Timber 90x45mm","params":{"width":0.09,"depth":0.045,"spacing":0.4},"weight":0.08099999999999999},
+    {"id":"a6e99727-c78f-493e-aa9f-0d31c6220f17","libraryComponentId":"gib-braceline-10","name":"GIB Braceline 10mm","params":{"thickness":0.01},"weight":0.09}],
+    "totalWeight":0.3476666666666667},
+
+    {"id":"84e75f79-4d52-449e-ae5a-c14f55fe1c37",
+    "name":"Brick Veneer Wall",
+    "partType": "Wall",
+    "layers":[{"id":"01a11c6f-962c-492a-b0b1-7513ab6e4530","libraryComponentId":"brick-veneer-70","name":"Brick Veneer 70mm","params":{"thickness":0.07},"weight":1.33},
+    {"id":"76610bc6-1420-4b1a-9823-d903b9e92e9f","libraryComponentId":"timber-90x45","name":"Timber 90x45mm","params":{"width":0.09,"depth":0.045,"spacing":0.4},"weight":0.08099999999999999},
+    {"id":"e8184e6b-a3a8-4604-bba3-6524ff0cbb27","libraryComponentId":"gib-braceline-10","name":"GIB Braceline 10mm","params":{"thickness":0.01},"weight":0.09}],
+    "totalWeight":1.5010000000000001},
+
+    {"id":"f87def10-9a66-4d3e-ba2b-fc84155b564d",
+    "name":"PCP Wall + Lining",
+    "partType": "Wall",
+    "layers":[{"id":"cecb928b-cf98-4e46-8dbc-da9afe39b2a5","libraryComponentId":"precast-concrete-100","name":"Precast Panel 100mm","params":{"thickness":0.1},"weight":2.5},
+    {"id":"bfc0dd24-d6bd-452f-a818-add021f4e463","libraryComponentId":"batten-70x35","name":"Timber Packer 90x35mm","params":{"width":0.09,"depth":0.035,"spacing":0.6},"weight":0.03266666666666667},
+    {"id":"04917065-f273-469a-9ecd-fc537d2a6d80","libraryComponentId":"plaster-board-10","name":"Plaster Board 10mm","params":{"thickness":0.01},
+    "weight":0.09}],
+    "totalWeight":2.6226666666666665}
+  ]
+}
