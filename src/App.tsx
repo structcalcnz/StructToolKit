@@ -19,7 +19,11 @@ const router = createBrowserRouter([
       { path: 'bracing', element: <BracingPage /> },
     ],
   },
-]);
+  ],
+  {
+    basename: '/StructToolKit',  // 👈 must match vite.config.ts base
+  }
+);
 
 function App() {
   return <RouterProvider router={router} />;
