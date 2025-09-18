@@ -12,6 +12,10 @@ import helpHtml from "@/docs/help.html?raw";
 import { FilePen, Box, House, BarChart3, Wind, Info, HelpCircle,
      Settings, PanelLeftClose, PanelLeftOpen } from 'lucide-react';
 
+const helpHtmlFixed = helpHtml.replace(
+  /src="\/Dims_figure.svg"/g,
+  `src="${import.meta.env.BASE_URL}Dims_figure.svg"`
+);
 
 const navItems = [
 { path: '/setup', label: 'Setup', icon: FilePen },
@@ -145,7 +149,7 @@ return (
                         <DialogDescription className="max-h-[60vh] overflow-y-auto p-3">
                             <div
                                 className="prose dark:prose-invert max-w-none text-sm"
-                                dangerouslySetInnerHTML={{ __html: helpHtml }}
+                                dangerouslySetInnerHTML={{ __html: helpHtmlFixed }}
                             />
                         </DialogDescription>
                     </DialogHeader>
