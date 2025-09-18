@@ -1,8 +1,9 @@
 import type { StateCreator } from 'zustand';
 import type { SeismicPartInstance, SeismicLevelResult, SeismicAction } from '@/types';
-import type { LevelsSlice } from './levelsSlice'; // For cross-slice data access
-import type { Part } from '@/types';
+//import type { LevelsSlice } from './levelsSlice'; // For cross-slice data access
+//import type { Part } from '@/types';
 import type { WindAction } from '@/types';
+import {type BoundState} from "../useBoundStore"
 import windLookups from '@/data/windLookups.json';
 import lookups from '@/data/seismicLookups.json';
 
@@ -172,11 +173,11 @@ export interface AnalysisSlice {
 }
 
 export const createAnalysisSlice: StateCreator<
-  AnalysisSlice & LevelsSlice & { parts: Record<string, Part> },
+  BoundState,
   [['zustand/immer', never]],
   [],
   AnalysisSlice
-> = (set, get, store) => ({
+> = (set, get) => ({
   seismicInstances: {},
   seismicLevelResults: {},
   applyAreaFactor: true,

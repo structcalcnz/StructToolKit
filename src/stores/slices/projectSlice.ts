@@ -2,6 +2,7 @@ import type { StateCreator } from "zustand";
 import { v4 as uuidv4 } from "uuid";
 import { z } from "zod";
 import { type Building, buildingSchema } from "@/types";
+import {type BoundState} from "../useBoundStore"
 
 type BuildingInfo = z.infer<typeof buildingSchema.shape.buildingInfo>;
 
@@ -16,11 +17,11 @@ export interface ProjectSlice {
 }
 
 export const createProjectSlice: StateCreator<
-  ProjectSlice,
+  BoundState,
   [["zustand/immer", never]],
   [],
   ProjectSlice
-> = (set, get, store) => ({
+> = (set) => ({
   building: buildingSchema.parse({
     id: uuidv4(),
     levelIds: [],

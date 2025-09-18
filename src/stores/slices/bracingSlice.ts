@@ -1,8 +1,10 @@
 import type { StateCreator } from 'zustand';
 import { v4 as uuidv4 } from 'uuid';
 import type { BracingSection, BracingLine, BracingMember } from '@/types';
-import type { LevelsSlice } from './levelsSlice'; // For cross-slice data
-import type { AnalysisSlice } from './analysisSlice';
+//import type { LevelsSlice } from './levelsSlice'; // For cross-slice data
+//import type { AnalysisSlice } from './analysisSlice';
+import {type BoundState} from "../useBoundStore"
+
 import bracingData from '@/data/bracingData.json';
 
 function createDefaultMember(lineName: string): BracingMember {
@@ -41,11 +43,11 @@ export interface BracingSlice {
 }
 
 export const createBracingSlice: StateCreator<
-  BracingSlice & LevelsSlice & AnalysisSlice,
+  BoundState,
   [['zustand/immer', never]],
   [],
   BracingSlice
-> = (set, get ,store) => ({
+> = (set, get) => ({
   bracingSystems: bracingData.systems,
   sections: {},
   activeSectionId: null,

@@ -3,7 +3,7 @@ import { produce } from 'immer';
 import { v4 as uuidv4 } from 'uuid';
 import type { Category, LibraryComponent, Part, Layer } from '@/types';
 import libraryData from '@/data/compDatabase.json';
-
+import {type BoundState} from "../useBoundStore"
 
 type RawComponent = Partial<LibraryComponent>;
 
@@ -81,7 +81,7 @@ export interface PartsSlice {
   };
 }
 
-export const createPartsSlice: StateCreator<PartsSlice, [['zustand/immer', never]], [], PartsSlice> = (set, get, store) => ({
+export const createPartsSlice: StateCreator<BoundState, [['zustand/immer', never]], [], PartsSlice> = (set, get) => ({
   categories: libraryData.categories,
   libraryComponents: normalizedComponents,
   predefinedParts: libraryData.predefinedParts.map((part: any) => ({
@@ -151,19 +151,7 @@ export const createPartsSlice: StateCreator<PartsSlice, [['zustand/immer', never
       });
     },
     setActivePart: (partId) => set({ activePartId: partId }),
-    // updatePartName: (partId, newName) => {
-    //   set(state => {
-    //     if (state.parts[partId]) state.parts[partId].name = newName;
-    //   });
-    // },
-    // toggleRoof: (partId: string, enabled: boolean, slope = 0) =>
-    //   set(state => {
-    //     const part = state.parts[partId];
-    //     if (part) {
-    //       part.roofSlope = enabled ? slope : undefined;
-    //       state.parts[partId] = recalculatePartWeight(part);
-    //     };
-    // }),
+
     updatePart: (partId, updates) => {
         set(state => {
             const part = state.parts[partId];

@@ -3,7 +3,8 @@
 import type { StateCreator } from 'zustand';
 import { v4 as uuidv4 } from 'uuid';
 import type { Level, LevelPart } from '@/types';
-import type { PartsSlice } from './partsSlice'; // For cross-slice interaction
+//import type { PartsSlice } from './partsSlice'; // For cross-slice interaction
+import {type BoundState} from "../useBoundStore"
 
 // Helper to calculates the dead weight contribution of a single LevelPart instance
 const calculateLevelPartWeight = (part: LevelPart): number => {
@@ -67,11 +68,11 @@ export interface LevelsSlice {
 }
 
 export const createLevelsSlice: StateCreator<
-  LevelsSlice & PartsSlice, // We need access to the PartsSlice
+  BoundState, 
   [['zustand/immer', never]],
   [],
   LevelsSlice
-> = (set, get, store) => {
+> = (set, get) => {
   // Create a default first level
   const defaultLevelId = uuidv4();
   const defaultLevel: Level = {

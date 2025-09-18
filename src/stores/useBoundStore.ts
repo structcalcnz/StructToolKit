@@ -8,7 +8,7 @@ import { createAnalysisSlice, type AnalysisSlice } from './slices/analysisSlice'
 import { createBracingSlice, type BracingSlice } from './slices/bracingSlice';
 
 // Combine all slice types
-type BoundState = ProjectSlice & PartsSlice & LevelsSlice & AnalysisSlice & BracingSlice;
+export type BoundState = ProjectSlice & PartsSlice & LevelsSlice & AnalysisSlice & BracingSlice;
 
 export const useBoundStore = create<BoundState>()(
   immer((set, get, store) => {
