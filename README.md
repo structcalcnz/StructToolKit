@@ -233,7 +233,7 @@ The application provides two categories of predefined parts to streamline the de
 These parts are pre-configured with multiple layers and components, giving a more detailed representation of the structure. They serve as a starting point for the user to quick create custom parts.
 
 | Part Name | Part Type | Key Components | Total Weight (Unit-Area-Weight, kPa) |
-| :--- | :--- | :--- | :--- |
+| --------- | --------- | -------------- | ------------------------------------ |
 | **Metal Roof** | Roof | Corrugated Steel, Timber Batten, Timber Rafter (190x45), Plaster Board | $\approx 0.32$ |
 | **Timber Floor** | Floor | Particle/Flake Board, Timber Joist (190x45), Timber Batten, Plaster Board | $\approx 0.36$ |
 | **Weatherboard Wall** | Wall | Timber Weather Board, Timber Batten, Timber Stud (90x45), GIB Braceline | $\approx 0.35$ |
@@ -245,13 +245,13 @@ These parts are pre-configured with multiple layers and components, giving a mor
 These simplified options are based on the common mass assumptions from **NZS 3604** and can be added directly when configuring building levels for rapid load input. They use a single `baseWeight` (Unit-Area-Weight in kPa) for calculation.
 
 | Part Name | Part Type | Base Weight (kPa) | Reference / Description |
-| :--- | :--- | :--- | :--- |
+| --------- | --------- | ----------------- | ----------------------- |
 | **Light Roof - NZS3604** | Roof | $0.45$ | Typical light roof cladding as per NZS 3604. |
 | **Heavy Roof - NZS3604** | Roof | $0.85$ | Typical heavy roof cladding. |
 | **Light Cladding Wall - NZS3604** | Wall | $0.5$ | Typical light weight wall cladding (e.g., weatherboard, fibre cement). |
-| **Medium Cladding Wall - NZS3604** | Wall | $0.8$ | Typical light weight wall cladding (e.g., weatherboard, fibre cement). |
+| **Medium Cladding Wall - NZS3604** | Wall | $0.8$ | Typical medium weight wall cladding (e.g., thick fibre cement). |
 | **Heavy Cladding Wall - NZS3604** | Wall | $2.2$ | Typical heavy wall cladding (e.g., masonry veneer). |
-| **Floor - NZS3604** | Floor | $0.45$ | Typical timber or light concrete floor structure. |
+| **Floor - NZS3604** | Floor | $0.45$ | Typical timber floor structure. |
 | **Partition Wall** | Other | $0.3$ | Represents non-structural partition walls based on an average unit-area-weight. |
 | **Other** | Other | $1.0$ | A generic part for items with a user-defined weight factor (where $1.0 \text{ factor} = 1.0\text{ kPa base weight}$). |
 
@@ -269,7 +269,7 @@ This chapter details the key parameters and assumptions used in the seismic desi
 | **Floor Live Loads** | Live loads on floors contribute to the seismic mass. |
 | **Combination Factor ($\Phi_E$)** | Can be applied as per NZS 1170.5 Cl 4.2: $0.6$ for storage floors and $0.3$ for other floors. |
 | **Area Reduction Factor ($\Phi_a$)** | Can be applied based on the floor area $A$ in $\text{m}^2$ as per NZS 1170.1: $\Phi_a = 0.3 + 3 / \sqrt{A}$. |
-| **Snow Load** | Snow load is not considered in current version |
+| **Snow Load** | Snow load is not considered in current version. |
 
 > **Note on $\Phi_a$:** This factor is **not** applied to floors covered by types C3, C4, C5, F, or G (NZS 1170.1 Table 3.1), floors with storage exceeding $5 \text{ kPa}$, one-way slabs, or floors supporting SED equipment/machinery.
 
@@ -342,7 +342,7 @@ The net $C_{pe}$ values are based on the average height above the eave, which is
 | $4.0$ | $0.85$ |
 | $5.0$ | $1.20$ |
 
-> **Note:** The roof height is calculated as a weighted average, using the roof area of each building part as the weighting factor. This approximation is suitable for mono-pitch and gable roofs, and slightly conservative for long-ridge hip roofs when individual roof part heights are used.<br>
+> **Note:** The roof height is calculated as a weighted average, using the roof area of each building part as the weighting factor. This approximation is suitable for mono-pitch and gable roofs, and slightly conservative for long-ridge hip roofs when an individual roof height is used.<br>
 For roof shapes with a plan form close to a square (e.g., short-ridge hip roofs), the average roof height may be input within the range of 0.5 to 1.0. Note that a lower average roof height results in a lower roof pressure coefficient, as shown in the table above.
 
 To ensure a conservative and safe design, while defining a roof part of a level:
@@ -377,15 +377,14 @@ This flexibility allows for more accurate representation of roof geometry, parti
 
 #### Simplified External Pressure Coefficients for Roof ($\mathbf{C_{p,r}}$)
 
-Values below are for the roof (upwind, downwind and 0.2 for internal pressure), based on the height/depth ratio ($h/d$) and roof slope ($\alpha$):
+Values below are for the roof (combining upwind, downwind and 0.2 for internal pressure), based on the height/depth ratio ($h/d$) and roof slope ($\alpha$):
 
 | Roof Slope ($\mathbf{\alpha}$) | $\mathbf{h/d \le 0.25}$ | $\mathbf{0.25 < h/d \le 0.5}$ | $\mathbf{0.5 < h/d \le 0.75}$ | $\mathbf{h/d > 0.75}$ |
 | :--- | :--- | :--- | :--- | :--- |
 | $\mathbf{\alpha < 10^\circ}$ | $-0.6$ | $-0.65$ | $-0.8$ | $-1.2$ |
 | $\mathbf{\alpha = 10^\circ}$ | $-0.6$ | $-0.8$ | $-0.95$ | $-1.1$ |
 | $\mathbf{\alpha = 15^\circ}$ | $-0.5$ | $-0.7$ | $-0.8$ | $-0.9$ |
-| $\mathbf{\alpha = 20^\circ}$ | $-0.7$ | $
--0.8$ | $-0.7$ | $-0.6$ |
+| $\mathbf{\alpha = 20^\circ}$ | $-0.7$ | $-0.8$ | $-0.7$ | $-0.6$ |
 | $\mathbf{\alpha = 25^\circ}$ | $-0.9$ | $-1.0$ | $-1.0$ | $-1.0$ |
 | $\mathbf{\alpha = 30^\circ}$ | $-1.3$ | $-1.2$ | $-1.15$ | $-1.1$ |
 | $\mathbf{\alpha = 35^\circ}$ | $-1.5$ | $-1.3$ | $-1.28$ | $-1.25$ |
