@@ -81,7 +81,7 @@ export function AssignedPartCard({ levelId, part }: AssignedPartCardProps) {
               />
             </div>
             <div className="space-y-1">
-              <Label title='The average height (typically 0.5× roof ridge height from eave)'>Average Height (m)</Label>
+              <Label title='The average height (typically roof ridge height from eave)'>Average Height (m)</Label>
               <Input
                 type="number"
                 value={part.height || 0}

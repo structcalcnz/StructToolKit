@@ -457,7 +457,7 @@ export const createAnalysisSlice: StateCreator<
           }
       }
       
-      const cperh = interpolateCperh(avgTopRoofHeight*2);
+      const cperh = interpolateCperh(avgTopRoofHeight);
       const pr = p_cfig * cperh;
       const pw = p_cfig * Cpe_w;
       factors.nzs3604_p_cfig = p_cfig;
@@ -478,7 +478,7 @@ export const createAnalysisSlice: StateCreator<
         const { alpha } = windInputs;
         const Cpw_w = 0.7;
         const alphaRad = alpha * (Math.PI / 180);
-        const cosAlpha = Math.cos(alphaRad);
+        const sinAlpha = Math.sin(alphaRad);
 
         // NS Direction---The wind blows North-to-South.
         if (factors.ns_max > 0 && factors.ew_min > 0) {
@@ -489,7 +489,7 @@ export const createAnalysisSlice: StateCreator<
           factors.cpwl_ns = getCpwl(alpha, factors.db_ns);
           factors.cpr_ns = getCpr(alpha, factors.hd_ns);
           factors.pw_ns = 0.6 * Math.pow(windInputs.v_ns, 2) * (Cpw_w - factors.cpwl_ns)/1000;
-          factors.pr_ns = -0.6 * Math.pow(windInputs.v_ns, 2) * cosAlpha * factors.cpr_ns/1000;
+          factors.pr_ns = -0.6 * Math.pow(windInputs.v_ns, 2) * sinAlpha * factors.cpr_ns/1000;
         }
 
         // EW Direction---The wind blows East-to-West.
@@ -501,7 +501,7 @@ export const createAnalysisSlice: StateCreator<
           factors.cpwl_ew = getCpwl(alpha, factors.db_ew);
           factors.cpr_ew = getCpr(alpha, factors.hd_ew);
           factors.pw_ew = 0.6 * Math.pow(windInputs.v_ew, 2) * (Cpw_w - factors.cpwl_ew)/1000;
-          factors.pr_ew = -0.6 * Math.pow(windInputs.v_ew, 2) * cosAlpha * factors.cpr_ew/1000;
+          factors.pr_ew = -0.6 * Math.pow(windInputs.v_ew, 2) * sinAlpha * factors.cpr_ew/1000;
         }
       }
 

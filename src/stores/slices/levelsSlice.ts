@@ -36,11 +36,12 @@ const updateAndRecalculateLevel = (level: Level): Level => {
 
 // These are simple, predefined parts that can be added to levels directly
 const PREDEFINED_LEVEL_PARTS = [
-  { name: 'Light Roof - NZS3604', baseWeight: 0.35, partType: 'Roof' as const },
-  { name: 'Heavy Roof - NZS3604', baseWeight: 0.75, partType: 'Roof' as const },
+  { name: 'Light Roof - NZS3604', baseWeight: 0.45, partType: 'Roof' as const },
+  { name: 'Heavy Roof - NZS3604', baseWeight: 0.85, partType: 'Roof' as const },
   { name: 'Light Cladding Wall - NZS3604', baseWeight: 0.5, partType: 'Wall' as const },
-  { name: 'Heavy Cladding Wall - NZS3604', baseWeight: 1.8, partType: 'Wall' as const },
-  { name: 'Floor - NZS3604', baseWeight: 0.4, partType: 'Floor' as const },
+  { name: 'Medium Cladding Wall - NZS3604', baseWeight: 0.8, partType: 'Wall' as const },
+  { name: 'Heavy Cladding Wall - NZS3604', baseWeight: 2.2, partType: 'Wall' as const },
+  { name: 'Floor - NZS3604', baseWeight: 0.45, partType: 'Floor' as const },
   { name: 'Partition Wall', baseWeight: 0.3, partType: 'Other' as const },
   { name: 'Other', baseWeight: 1.0, partType: 'Other' as const },
 ];
